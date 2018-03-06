@@ -1,0 +1,33 @@
+extends layout
+
+block main
+    div.container
+        
+        form(method='post', role='form')
+            div.col   
+                label Post Code:
+                br
+                input(type='text', id='input', name='post_code')
+            div.col
+                label Company Type:
+                br
+                select(name='company')
+                    option(value='finance') Finance
+                    option(value='construction') Construction
+                    option(value='manufacturing') Manufacturing
+                    option(value='public_admin') Public Admin
+                    option(value='health_and_care') Health and Care
+                    option(value='hospitality') Hospitality
+                    option(value='retail') Retail
+                    option(value='education') Education
+                    option(value='transport') Transport
+                    option(value='other') Other
+            div.col    
+                label Employees:
+                br
+                input(type='number', id='input', name='employees')
+            div.col    
+                br  
+                input(type="submit", value="Submit")
+
+              
